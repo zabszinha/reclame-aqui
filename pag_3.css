@@ -1,0 +1,36 @@
+
+.template {
+    margin-top: 20px;
+    margin-right: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.tamanho500 {
+
+    width: 300px;
+}
+ 
+
+.Whatsapp {
+    margin-right: 525px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    
+    
+}
+
+.botao {
+    margin-left: 565px;
+} 
+
+#linha-horizontal {
+    width: 100%;
+    border: 1px solid #000;
+    margin-top: 10px;
+}
+
