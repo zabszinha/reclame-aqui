@@ -1,0 +1,78 @@
+<div class="header">
+
+
+
+</div>
+<p>
+</p>
+
+<div class="wrap" style="width: 80%; margin:auto">
+    <div class="filters">
+        <div class="card card-spacing">
+            <div class="p-fluid">
+                <div class="p-field spacing-input">
+                    <label for="atendente">Atendentes</label>
+                    <input id="atendente" type="text" pInputText />
+                </div>
+                <div class="p-field spacing-input">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="text" pInputText />
+                </div>
+               <div class="p-field">
+                <button pButton type="button" label="Salvar" class="p-button-success"></button>
+               </div>
+            </div>
+        </div>
+        <div id="linha-horizontal"></div>
+        <!-- <div class="atendentes">
+            <h3> Atendentes </h3> <input class="tamanho-input" style="margin: 10px;" type="text" pInputText>
+        </div>
+    
+        <div class="e-mail">
+            <h3> E-mail </h3> <input class="tamanho-input" style="margin: 10px; margin-left: 50px;" type="text" pInputText>
+        </div> -->
+        <div class="card card-spacing">
+            <div class="p-fluid">
+                <div class="p-field spacing-input">
+                    <label for="template">Templates</label>
+                    <p-autoComplete id="template" class="tamanho-input" 
+                        [(ngModel)]="text" [suggestions]="results" (completeMethod)="search($event)"></p-autoComplete>
+                </div>
+                <div class="p-field">
+                    <button pButton type="button" label="Adicionar" class="p-button-success"></button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- 
+        <div class="template">
+            <h3>Templates </h3>
+            <p-autoComplete class="tamanho-input" [style]="{ 'margin-left': '10px' }" [(ngModel)]="text"
+                [suggestions]="results" (completeMethod)="search($event)"></p-autoComplete>
+            <button pButton type="button" label="Adicionar" class="p-button-success"></button>
+        </div> -->
+    </div>
+    <p-table [value]="atendentes" styleClass="p-datatable-gridlines" responsiveLayout="scroll">
+        <ng-template pTemplate="header">
+
+
+            <tr>
+                <th>Template</th>
+                <th>Ação</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-atendente>
+            <tr>
+
+                <td>{{atendente}}</td>
+
+
+
+                <td><button pButton type="button" label="Remover" class="p-button-danger"></button></td>
+
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
