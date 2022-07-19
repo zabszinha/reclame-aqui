@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: 20px
+     
+}
+
+.border {
+    border-radius: 8px;
+}
+
