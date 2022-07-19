@@ -1,0 +1,62 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.card-spacing{margin: 1em 0; width: 50%;}
+
+.card-spacing button{width: 40%;}
+.card-spacing label {font-weight: 600;}
+
+.spacing-input{margin-bottom: 2em;}
+/* 
+.atendentes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 400px;
+    margin-top: 20px;
+} */
+/* 
+.tamanho-input {
+    width: 350px;
+} */
+
+
+/* 
+.e-mail {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 400px;
+    
+} */
+
+#linha-horizontal {
+    width: 100%;
+    border: 1px solid #000;
+    margin-top: 10px;
+
+}
+
+.template {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 300px;
+    margin-top: 20px;
+}
+
+
